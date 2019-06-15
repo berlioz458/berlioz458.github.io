@@ -1,8 +1,17 @@
 .block-first{
     font-family: Monospaced;
-    font-size: 13px;
+    font-size: 20px;
+}
+
+.block-second {
+    font-size: 20px;
+    font-family: Monospaced;
 }
 
 h1 {
     color: firebrick;
+}
+
+body {
+    background-color: antiquewhite;
 }
