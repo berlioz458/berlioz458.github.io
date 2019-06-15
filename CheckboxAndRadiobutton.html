@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>About radiobutton and checkbox</title>
+</head>
+<body>
+<h2>Про то как лучше работать с такими элементами</h2>
+<div class="about radiobutton">
+    <p>
+        Radiobuttons объединяются в группу, где все элементы имеют одинаковые значения атрибута name, но разные значения
+        атрибута value
+    </p>
+    <table>
+        <tr>
+            <td><input type="radio" name="language" value="python" checked>Python</td>
+            <td>&lt;input type="radio" name="language" value="python" checked&gt;</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="language" value="selenium">Selenium</td>
+            <td>&lt;input type="radio" name="language" value="selenium"&gt;</td>
+        </tr>
+    </table>
+</div>
+<div class="about checkbox">
+    <p>
+        Checkboxes могут иметь как одинаковые, так и разные значения атрибута name. <br>
+        Поэтому и те, и другие лучше искать с помощью значения id или значения атрибута value. <br>
+        Если вы видите на странице чекбокс с уникальным значением name, то можете искать по name <br>
+    </p>
+
+</div>
+
+</body>
+</html>

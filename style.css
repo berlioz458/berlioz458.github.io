@@ -12,6 +12,18 @@ h1 {
     color: firebrick;
 }
 
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 3px;
+    width: 300px;
+    border: 1px solid black;
+}
+
 body {
     background-color: antiquewhite;
 }
