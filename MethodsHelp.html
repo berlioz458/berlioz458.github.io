@@ -10,6 +10,12 @@
 <ul>
     <li>get_attribute() - получаем значние атрибута</li>
     <li>text - получаем текст с фронта для элемента</li>
+    <li>select_by_value(value) - найти любой вариант из списка. Для использоваения надо подключать класс Select.<br>
+        from selenium.webdriver.support.ui import Select <br>
+        select = Select(browser.find_element_by_tag_name("select"))<br>
+    </li>
+    <li>select.select_by_visible_text("text") - ищет элемент по видимому тексту</li>
+    <li>select.select_by_index(index) - ищет элемент по его индексу или порядковому номеру</li>
 </ul>
 </body>
 </html>
