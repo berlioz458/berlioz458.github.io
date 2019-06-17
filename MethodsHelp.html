@@ -16,6 +16,16 @@
     </li>
     <li>select.select_by_visible_text("text") - ищет элемент по видимому тексту</li>
     <li>select.select_by_index(index) - ищет элемент по его индексу или порядковому номеру</li>
+    <li>execute_script(javascript_code) - можно выполнить программу, написанную на языке JavaScript</li>
+    <li>current_dir = os.path.abspath(os.path.dirname(__file__))    # получаем путь к директории текущего исполняемого файла <br>
+        file_path = os.path.join(current_dir, 'test.txt')           # добавляем к этому пути имя файла <br>
+        button1.send_keys(file_path) # используя метод send_keys отправляем нужный файл
+    </li>
+    <li>browser.switch_to.alert <br>
+        alert.accept() # подтвердить алерт <br>
+        confirm.dismiss() # отклонить confirm <br>
+        prompt.send_keys("My answer") # добавить ответ в prompt
+    </li>
 </ul>
 </body>
 </html>
