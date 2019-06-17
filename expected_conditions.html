@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>About expected_conditions</title>
+</head>
+<body>
+<div class = "code">
+    <p>
+        <code style="color: blue;background-color: white;">
+            from selenium.webdriver.common.by import By <br>
+            from selenium.webdriver.support.ui import WebDriverWait <br>
+            from selenium.webdriver.support import expected_conditions as EC <br>
+            from selenium import webdriver <br>
+            <br>
+            browser = webdriver.Chrome()<br>
+            <br>
+            browser.get("http://suninjuly.github.io/wait2.html")<br>
+            <br>
+            # говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной<br>
+            button = WebDriverWait(browser, 5).until(<br>
+            EC.element_to_be_clickable((By.ID, "check"))<br>
+            )<br>
+            button.click()<br>
+            message = browser.find_element_by_id("check_message")<br>
+            <br>
+            assert "успешно" in message.text<br>
+        </code>
+    </p>
+</div>
+<div>
+    <p>
+        Обратите внимание, что в объекте WebDriverWait используется функция until, <br>
+        в которую передается правило ожидания, элемент, а так же значение, по которому мы будем искать элемент. <br>
+        В модуле expected_conditions есть много других правил, которые позволяют реализовать необходимые ожидания: <br>
+    </p>
+    <ul>
+        <li>title_is</li>
+        <li>title_contains</li>
+        <li>presence_of_element_located</li>
+        <li>visibility_of_element_located</li>
+        <li>visibility_of</li>
+        <li>presence_of_all_elements_located</li>
+        <li>text_to_be_present_in_element</li>
+        <li>text_to_be_present_in_element_value</li>
+        <li>frame_to_be_available_and_switch_to_it</li>
+        <li>invisibility_of_element_located</li>
+        <li>element_to_be_clickable</li>
+        <li>staleness_of</li>
+        <li>element_to_be_selected</li>
+        <li>element_located_to_be_selected</li>
+        <li>element_selection_state_to_be</li>
+        <li>element_located_selection_state_to_be</li>
+        <li>alert_is_present</li>
+    </ul>
+
+</div>
+</body>
+</html>

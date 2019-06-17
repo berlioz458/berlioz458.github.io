@@ -22,3 +22,13 @@ td {
 body {
     background-color: antiquewhite;
 }
+
+.code {
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: auto;
+    padding-right: auto;
+    background-color: white;
+    font-family: monospace;
+    color: blue;
+}
